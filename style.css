@@ -1,0 +1,96 @@
+/* Basic Styling for Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e09, #d0e);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center;     /* Vertically centers the content */
+    height: 100vh;           /* Full screen height */
+    flex-direction: column;  /* Makes sure the content is stacked vertically */
+    background-image: url(images/shopping-cart--removebg-preview.png);
+    background-repeat: no-repeat;
+}
+
+/* Container for the Cart */
+#row1, #row2, #row3 {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the entire cart */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin: 5px;
+    width: 180px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#row3 {
+    text-align: center;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #92aab3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #a7b1b2;
+}
+
+/* Output section styling */
+#output {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#output p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Add some spacing for inputs */
+input {
+    margin-left: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    #output {
+        width: 100%;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Shopping Cart</h1>
+    <div id="row1">
+        <label for="item1"></label>Enter item 1 price:
+        <input id="item1" type="text">
+
+        <label for="item2quent"></label>Enter quanty of item 1:
+        <input id="item2quent" type="text">        
+
+    </div>
+
+    <div id="row2">
+        <label for="item2"></label>Enter item 2 price:
+        <input id="item2" type="text">
+
+        
+        <label for="item1quent"></label>Enter quanty of item 1:
+        <input id="item1quent" type="text">
+        
+    </div>
+    <div id="row3">
+        <label for="shepingp"></label>Enter Shepping Charges:
+        <input type="text" id="shepingp">
+    </div>
+    <button onclick="getRecipt()">Get Recipt</button>
+
+    <div id="output">
+        
+        <p id="totalitem1"></p>
+        <p id="totalitem2"></p>
+        <p id="ShippingCharges"></p>
+        <p id="totalPrice"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
